@@ -9,7 +9,7 @@
 			// Set up a minimal default configuration
 			var defaults = {
 				browser_spellcheck: $(element).prop('spellcheck'),
-				plugins: ['link'],
+				plugins: ['link', 'paste'],
 				toolbar: 'undo redo | bold italic | bullist numlist | link',
 				menubar: false,
 				statusbar: false,
@@ -32,7 +32,7 @@
 							if (!ko.isWriteableObservable(accessor)) throw 'wysiwygDirty must be writeable and observable';
 							accessor(true);
 						}
-						// ...otherwise make a sensible assumption to set the $root view-model's isDirty
+							// ...otherwise make a sensible assumption to set the $root view-model's isDirty
 						else {
 							bindingContext.$root.isDirty = true;
 						}
