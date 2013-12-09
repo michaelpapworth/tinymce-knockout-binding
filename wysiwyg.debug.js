@@ -56,7 +56,7 @@
 		},
 		'update': function (element, valueAccessor, allBindings, viewModel, bindingContext) {
 			// Implement the 'value' binding
-			return ko.bindingHandlers.value.update(element, valueAccessor, allBindings, viewModel, bindingContext);
+			return ko.bindingHandlers['value'].update(element, valueAccessor, allBindings, viewModel, bindingContext);
 		}
 	};
 }(jQuery));
