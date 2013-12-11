@@ -1,3 +1,10 @@
+/*!
+ * tinymce-knockout-binding v1.0.0
+ * https://github.com/michaelpapworth/tinymce-knockout-binding
+ *
+ * Copyright 2013 Michael Papworth
+ * Released under the MIT license
+ */
 (function ($) {
 	ko.bindingHandlers['wysiwyg'] = {
 		'init': function (element, valueAccessor, allBindings, viewModel, bindingContext) {
