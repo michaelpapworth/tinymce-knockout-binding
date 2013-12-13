@@ -23,3 +23,5 @@ View-model got dirty tracking?  No problem.  Just add the `wysiwygDirty` binding
 ```html
 <textarea data-bind="wysiwyg : myObservable, wysiwygDirty : myDirtyObservable"></textarea>
 ```
+
+See a working example http://jsfiddle.net/michaelpapworth/rU3aE/
