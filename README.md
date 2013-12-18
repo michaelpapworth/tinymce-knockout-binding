@@ -3,6 +3,25 @@ tinymce-knockout-binding
 
 A KnockoutJS custom binding that applys a TinyMCE Editor to the bound HTML element
 
+Dependencies
+------------
+
+  1.  jQuery 1.7.2 or later
+  2.  KnockoututJS 3.0.0 or later
+  3.  TinyMCE 4.0.0 or later
+  4.  TinyMCE jQuery plugin
+
+Setup
+-----
+
+```html
+<script type="text/javascript" src="/scripts/jquery-1.7.2.min.js"> </script>
+<script type="text/javascript" src="/scripts/knockout-3.0.0.js"> </script>
+<script type="text/javascript" src="/scripts/tinymce.min.js"> </script>
+<script type="text/javascript" src="/scripts/jquery.tinymce.min.js"> </script>
+<script type="text/javascript" src="/scripts/wysiwyg.min.js"> </script>
+```
+
 Usage
 -----
 
