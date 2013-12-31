@@ -1,0 +1,40 @@
+{
+  "name": "tinymce-knockout-binding",
+  "title": "tinymce-knockout-binding",
+  "version": "1.0.1",
+  "description": "A KnockoutJS custom binding that applies a TinyMCE Editor to the bound HTML element",
+  "main": "src/wysiwyg.min.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/michaelpapworth/tinymce-knockout-binding.git"
+  },
+  "keywords": [
+    "knockoutjs",
+    "tinymce",
+    "binding",
+	"wysiwyg"
+  ],
+  "author": {
+    "name": "Michael Papworth",
+    "url": "http://stackoverflow.com/users/2955675/michaelpapworth"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.github.com/michaelpapworth/tinymce-knockout-binding/master/LICENSE"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/michaelpapworth/tinymce-knockout-binding/issues"
+  },
+  "homepage": "https://github.com/michaelpapworth/tinymce-knockout-binding",
+  "scripts": {
+    "build": "npm install && grunt",
+	"start": "grunt watch"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-contrib-watch": "~0.5.3"
+  }
+}

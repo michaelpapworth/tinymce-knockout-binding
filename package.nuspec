@@ -2,16 +2,16 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>tinymce-knockout-binding</id>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
         <title>tinymce-knockout-binding</title>
         <authors>Michael Papworth</authors>
         <owners>Michael Papworth</owners>
         <licenseUrl>https://raw.github.com/michaelpapworth/tinymce-knockout-binding/master/LICENSE</licenseUrl>
         <projectUrl>https://github.com/michaelpapworth/tinymce-knockout-binding</projectUrl>
         <requireLicenseAcceptance>true</requireLicenseAcceptance>
-        <description>A KnockoutJS custom binding that applys a TinyMCE Editor to the bound HTML element</description>
-        <summary>A KnockoutJS custom binding that applys a TinyMCE Editor to the bound HTML element</summary>
-        <copyright>2013 Michael Papworth</copyright>
+        <description>A KnockoutJS custom binding that applies a TinyMCE Editor to the bound HTML element</description>
+        <summary>A KnockoutJS custom binding that applies a TinyMCE Editor to the bound HTML element</summary>
+        <copyright>2014 Michael Papworth</copyright>
         <language>en-GB</language>
         <tags>jQuery KnockoutJS TinyMCE binding wysiwyg editor</tags>
         <dependencies>
@@ -22,7 +22,7 @@
         </dependencies>
     </metadata>
     <files>
-        <file src="wysiwyg.debug.js" target="content\Scripts\wysiwyg.debug.js" />
-        <file src="wysiwyg.min.js" target="content\Scripts\wysiwyg.min.js" />
+        <file src="src\wysiwyg.js" target="content\Scripts\wysiwyg.js" />
+        <file src="dist\wysiwyg.min.js" target="content\Scripts\wysiwyg.min.js" />
     </files>
 </package>
