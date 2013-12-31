@@ -30,7 +30,8 @@
   "homepage": "https://github.com/michaelpapworth/tinymce-knockout-binding",
   "scripts": {
     "build": "npm install && grunt",
-	"start": "grunt watch"
+	"start": "grunt watch",
+    "test": "grunt"
   },
   "devDependencies": {
     "grunt": "~0.4.2",
