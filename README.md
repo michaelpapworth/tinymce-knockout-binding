@@ -53,5 +53,5 @@ Want to roll your own or contribute?
   1. Fork this repository and create a new branch if you intend to contribute your work.
   2. Clone the branch to your computer.
   3. In the console, ensure the /node_modules/ are installed `cd tinymce-knockout-binding && npm install`.
-  4. To build, `grunt`.
-  5. Enable the build as you save your work; `npm start`.
+  4. To build `npm test` or `grunt`.
+  5. Enable the build as you save your work `npm start` or `grunt watch`.
