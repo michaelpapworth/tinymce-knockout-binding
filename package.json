@@ -12,7 +12,7 @@
     "knockoutjs",
     "tinymce",
     "binding",
-	"wysiwyg"
+    "wysiwyg"
   ],
   "author": {
     "name": "Michael Papworth",
@@ -30,11 +30,12 @@
   "homepage": "https://github.com/michaelpapworth/tinymce-knockout-binding",
   "scripts": {
     "build": "npm install && grunt",
-	"start": "grunt watch",
+    "start": "grunt watch",
     "test": "grunt"
   },
   "devDependencies": {
     "grunt": "~0.4.2",
+    "grunt-cli": "~0.1.11",
     "grunt-contrib-uglify": "~0.2.2",
     "grunt-contrib-watch": "~0.5.3"
   }
