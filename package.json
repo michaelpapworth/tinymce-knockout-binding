@@ -3,7 +3,7 @@
   "title": "tinymce-knockout-binding",
   "version": "1.0.1",
   "description": "A KnockoutJS custom binding that applies a TinyMCE Editor to the bound HTML element",
-  "main": "src/wysiwyg.min.js",
+  "main": "dist/wysiwyg.min.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/michaelpapworth/tinymce-knockout-binding.git"
