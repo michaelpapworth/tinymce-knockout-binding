@@ -1,0 +1,5 @@
+.gitattributes
+.jshintrc
+.travis.yml
+/test
+/Gruntfile.js
