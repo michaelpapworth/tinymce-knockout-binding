@@ -1,7 +1,7 @@
 tinymce-knockout-binding
 ========================
 
-A KnockoutJS custom binding that applys a TinyMCE Editor to the bound HTML element
+A KnockoutJS custom binding that applies a TinyMCE Editor to the bound HTML element
 
 [![Build Status](https://travis-ci.org/michaelpapworth/tinymce-knockout-binding.png?branch=master)](https://travis-ci.org/michaelpapworth/tinymce-knockout-binding)
 
