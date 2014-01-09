@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>tinymce-knockout-binding</id>
-        <version>1.0.1</version>
+        <version>1.0.2</version>
         <title>tinymce-knockout-binding</title>
         <authors>Michael Papworth</authors>
         <owners>Michael Papworth</owners>
@@ -22,7 +22,7 @@
         </dependencies>
     </metadata>
     <files>
-        <file src="src\wysiwyg.js" target="content\Scripts\wysiwyg.js" />
+        <file src="dist\wysiwyg.js" target="content\Scripts\wysiwyg.js" />
         <file src="dist\wysiwyg.min.js" target="content\Scripts\wysiwyg.min.js" />
     </files>
 </package>
