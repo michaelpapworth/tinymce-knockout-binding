@@ -1,28 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
-    <metadata>
-        <id>tinymce-knockout-binding</id>
-        <version>1.0.2</version>
-        <title>tinymce-knockout-binding</title>
-        <authors>Michael Papworth</authors>
-        <owners>Michael Papworth</owners>
-        <licenseUrl>https://raw.github.com/michaelpapworth/tinymce-knockout-binding/master/LICENSE</licenseUrl>
-        <projectUrl>https://github.com/michaelpapworth/tinymce-knockout-binding</projectUrl>
-        <requireLicenseAcceptance>true</requireLicenseAcceptance>
-        <description>A KnockoutJS custom binding that applies a TinyMCE Editor to the bound HTML element</description>
-        <summary>A KnockoutJS custom binding that applies a TinyMCE Editor to the bound HTML element</summary>
-        <copyright>2014 Michael Papworth</copyright>
-        <language>en-GB</language>
-        <tags>jQuery KnockoutJS TinyMCE binding wysiwyg editor</tags>
-        <dependencies>
-            <dependency id="jQuery" version="1.7.2" />
-            <dependency id="knockoutjs" version="3.0.0" />
-            <dependency id="TinyMCE" version="4.0" />
-            <dependency id="TinyMCE.JQuery" version="4.0" />
-        </dependencies>
-    </metadata>
-    <files>
-        <file src="dist\wysiwyg.js" target="content\Scripts\wysiwyg.js" />
-        <file src="dist\wysiwyg.min.js" target="content\Scripts\wysiwyg.min.js" />
-    </files>
+	<metadata>
+		<id>tinymce-knockout-binding</id>
+		<version>1.0.2</version>
+		<title>tinymce-knockout-binding</title>
+		<authors>Michael Papworth</authors>
+		<owners>Michael Papworth</owners>
+		<licenseUrl>https://raw.github.com/michaelpapworth/tinymce-knockout-binding/master/LICENSE</licenseUrl>
+		<projectUrl>https://github.com/michaelpapworth/tinymce-knockout-binding</projectUrl>
+		<requireLicenseAcceptance>true</requireLicenseAcceptance>
+		<description>A KnockoutJS custom binding that applies a TinyMCE Editor to the bound HTML element</description>
+		<summary>A KnockoutJS custom binding that applies a TinyMCE Editor to the bound HTML element</summary>
+		<copyright>2014 Michael Papworth</copyright>
+		<language>en-GB</language>
+		<tags>jQuery KnockoutJS TinyMCE binding wysiwyg editor</tags>
+		<dependencies>
+			<dependency id="jQuery" version="1.7.2" />
+			<dependency id="knockoutjs" version="3.0.0" />
+			<dependency id="TinyMCE" version="4.0" />
+			<dependency id="TinyMCE.JQuery" version="4.0" />
+		</dependencies>
+	</metadata>
+	<files>
+		<file src="dist\wysiwyg.js" target="content\Scripts\wysiwyg.js" />
+		<file src="dist\wysiwyg.min.js" target="content\Scripts\wysiwyg.min.js" />
+		<file src="dist\wysiwyg.min.map" target="content\Scripts\wysiwyg.min.map" />
+	</files>
 </package>
