@@ -63,7 +63,7 @@ Since v1.0.2 extensions are functions called when the editor changes.  To create
 (function( wysiwyg ) {
 
 	wysiwyg.extensions['mycustomextension'] = function( editor, args, allBindings, bindingContext ) {
-		// your goes logic here
+		// your logic goes here
 	};
 
 })( ko.bindingHandlers['wysiwyg'] );
