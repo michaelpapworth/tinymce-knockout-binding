@@ -33,6 +33,9 @@
     "start": "grunt watch",
     "test": "grunt"
   },
+  "peerDependencies": {
+    "grunt": "4.x"
+  },
   "devDependencies": {
     "grunt": "~0.4.4",
     "grunt-cli": "~0.1.13",
