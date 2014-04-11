@@ -33,8 +33,28 @@ A simple default editor
 Design your own editor using http://www.tinymce.com/wiki.php/Configuration to build the `wysiwygConfig` object.
 
 ```html
-<textarea data-bind="wysiwyg : myObservable, wysiwygConfig : { statusbar : true }"></textarea>
+<textarea data-bind="wysiwyg: myObservable, wysiwygConfig: { statusbar: true }"></textarea>
 ```
+
+**Customisable default configuration NEW to v1.1.0**
+
+tinymce-knockout-binding no longer assumes a default configuration for the editor.  Configuration is applied to all editor instances by setting the binding's `defaults` property.
+
+```js
+    ko.bindingHandlers['wysiwyg'].defaults = {
+        'plugins': [ 'link' ],
+        'toolbar': 'undo redo | bold italic | bullist numlist | link',
+        'menubar': false,
+        'statusbar': false,
+        'setup': function( editor ) {
+            editor.on( 'init', function( e ) {
+                console.log('wysiwyg initialised');
+            });
+        }
+    };
+```
+
+Using this in conjuction with the `wysiwygConfig` binding allows specific editors to **extend** these settings.
 
 Working with Extensions
 -----------------------
@@ -42,15 +62,15 @@ Working with Extensions
 View-model got dirty tracking?  No problem.  Just add the `wysiwygDirty` binding to maintain your model's dirty tracking.  Not bothered about this?  We still record if the editor was touched, just inspect your viewModel or `bindingContext.$root` for the `isDirty` flag.
  
 ```html
-<textarea data-bind="wysiwyg : myObservable, wysiwygDirty : myDirtyObservable"></textarea>
+<textarea data-bind="wysiwyg: myObservable, wysiwygDirty: myDirtyObservable, wysiwygExtensions: [ 'dirty' ]"></textarea>
 ```
 
 Using the `wordcount plugin`?  Need to extract the counter value?  Simple.
 
 ```html
-<textarea data-bind="wysiwyg : myObservable, 
-                     wysiwygConfig : { plugins : ['wordcount'] },
-                     wysiwygExtensions: ['wordcount'],
+<textarea data-bind="wysiwyg: myObservable,
+                     wysiwygConfig: { plugins: [ 'wordcount' ] },
+                     wysiwygExtensions: [ 'wordcount' ],
                      wysiwygWordCount: myCounter">
 </textarea>
 ```
@@ -71,7 +91,7 @@ Since v1.0.2 extensions are functions called when the editor changes.  To create
 
 To consume your new extension;
 ```html
-<textarea data-bind="wysiwyg : myObservable, wysiwygExtensions: ['mycustomextension']"></textarea>
+<textarea data-bind="wysiwyg : myObservable, wysiwygExtensions: [ 'mycustomextension' ]"></textarea>
 ```
 
 See a working example http://jsfiddle.net/michaelpapworth/rU3aE/5/

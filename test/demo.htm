@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wysiwyg Demo</title>
+    <link type="text/css" rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.1.1/css/bootstrap.min.css" />
+</head>
+<body>
+    <header class="container">
+        <h1>tinymce-knockout-binding feature demo</h1>
+    </header>
+
+    <section class="container">
+
+        <div class="col-sm-6">
+            <textarea data-bind="wysiwyg: content, wysiwygConfig: { plugins : ['wordcount'] }, wysiwygExtensions: ['wordcount', 'dirty'], wysiwygDirty: isDirty, wysiwygWordCount: wordcount"></textarea>
+        </div>
+
+        <div class="col-sm-6 well" data-bind="html: content"></div>
+
+        <div class="col-sm-12">
+
+            <h3>extension values</h3>
+            <p>Words:&nbsp;<span class="label label-primary" data-bind="text: wordcount"></span></p>
+            <p>Dirty?&nbsp;<span class="label label-success" data-bind="css: {'label-danger': isDirty }, text: isDirty() ? 'Yes' : 'No'"></span></p>
+
+            <h3>update</h3>
+            <textarea class="col-sm-12" rows="6" data-bind="value: update"></textarea>
+            <button class="btn btn-default" data-bind="click: replace">Replace</button>
+
+        </div>
+
+    </section>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.7.2.min.js"> </script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/bootstrap/3.1.1/bootstrap.min.js"> </script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-3.0.0.js"> </script>
+    <script type="text/javascript" src="http://tinymce.cachefly.net/4.0/tinymce.min.js"> </script>
+    <script type="text/javascript" src="http://tinymce.cachefly.net/4.0/jquery.tinymce.min.js"> </script>
+    <script type="text/javascript" src="..\dist\wysiwyg.js"> </script>
+    <script type="text/javascript">
+
+        (function( $, ko ) {
+
+            ko.bindingHandlers['wysiwyg'].defaults = {
+                'plugins': [ 'link' ],
+                'toolbar': 'undo redo | bold italic | bullist numlist | link',
+                'menubar': false,
+                'statusbar': false,
+                'setup': function( editor ) {
+                    editor.on( 'init', function( e ) {
+                        console.log('wysiwyg initialised');
+                    });
+                }
+            };
+
+            function ViewModel( content ) {
+                var self = this;
+                self.content = ko.observable( content );
+                self.wordcount = ko.observable( 0 );
+                self.isDirty = ko.observable( false );
+                self.update = ko.observable( '<p>enter html into this box to replace the content of the editor</p>' );
+                self.replace = function() {
+                    self.content( self.update() );
+                };
+            };
+
+            $( document ).ready( function() {
+                ko.applyBindings( new ViewModel( '<p>Welcome to the tinymce-knockout-binding feature demonstration.</p>' ) );
+            });
+
+        }( jQuery, ko ));
+
+    </script>
+</body>
+</html>

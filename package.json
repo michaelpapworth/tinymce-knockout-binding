@@ -1,7 +1,7 @@
 {
   "name": "tinymce-knockout-binding",
   "title": "tinymce-knockout-binding",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "A KnockoutJS custom binding that applies a TinyMCE Editor to the bound HTML element",
   "main": "dist/wysiwyg.js",
   "repository": {
