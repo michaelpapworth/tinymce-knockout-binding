@@ -34,7 +34,7 @@
     "test": "grunt"
   },
   "peerDependencies": {
-    "grunt": "4.x"
+    "grunt": "0.4.x"
   },
   "devDependencies": {
     "grunt-cli": "~0.1.13",
