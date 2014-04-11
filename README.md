@@ -94,7 +94,7 @@ To consume your new extension;
 <textarea data-bind="wysiwyg : myObservable, wysiwygExtensions: [ 'mycustomextension' ]"></textarea>
 ```
 
-See a working example http://jsfiddle.net/michaelpapworth/rU3aE/5/
+See a working example http://jsfiddle.net/michaelpapworth/rU3aE/16/
 
 Want to roll your own or contribute?
 ----------------------
