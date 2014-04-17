@@ -73,7 +73,7 @@
 		// Ensure paste functionality
 		if ( !config['plugins'] ) {
 			config['plugins'] = [ 'paste' ];
-		} else if ( $.inArray( 'paste', config['plugins'] ) ) {
+		} else if ( $.inArray( 'paste', config['plugins'] ) === -1 ) {
 			config['plugins'].push( 'paste' );
 		}
 
