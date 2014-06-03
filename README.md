@@ -9,9 +9,9 @@ Setup & Dependencies
 --------------------
 
   1.  jQuery 1.7.2 or later
-  2.  KnockoututJS 3.0.0 or later
+  2.  KnockoutJS 3.0.0 or later
   3.  TinyMCE 4.0.0 or later
-  4.  TinyMCE jQuery plugin
+  4.  jQuery plugin for TinyMCE
 
 ```html
 <script type="text/javascript" src="/scripts/jquery-1.7.2.min.js"> </script>
